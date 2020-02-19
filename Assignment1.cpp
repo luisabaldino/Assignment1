@@ -98,7 +98,7 @@ int main()
     {
       //Find the sum of every square ";
       lineLength = line.length() - 1;
-      sqDiffSum = (lineLength-mean) * (lineLength-mean);
+      sqDiffSum += (lineLength-mean) * (lineLength-mean);
     }
   //Close file
   inFile.close();
@@ -137,7 +137,7 @@ int main()
   //Open file
   outFile.open("luisabaldino.out");
   //Output basic info
-  outFile.precision(2);
+  outFile.precision(4);
   outFile.setf(ios::fixed);
   outFile.setf(ios::showpoint);
   outFile << "Name: Luisa Baldino\nStudent ID: 2328991\nDate: 02/25/20\n";
